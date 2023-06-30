@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+.todo{
+    background-color: white;
+    align-items: center;
+    align-content: center;
+    padding:40px 30px 70px;
+    margin-top: 50px;
+    width:35vw;
+    margin-left: 320px;
+    margin-top: 100px;
+    border-radius: 8px;
+}
+.todo h1{
+    color: rgb(15, 37, 66);
+    font-family: "ubuntu";
+    font-size: 20px;
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.row{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex:1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+.but{
+    border: none;
+    outline: none;
+    padding: 10px 40px;
+    background-color: #062657;
+    font-size: 16px;
+    cursor: pointer;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+    font-family: "ubuntu";
+}
+
+ul li{
+    list-style: none;
+    user-select: none;
+    cursor: pointer;
+    padding:12px 8px 12px 50px;
+    font-size: 17px;
+    position: relative;
+}
+
+ul li::before{
+    content: ' ';
+    position: absolute;
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+    background-image: url("umcheck.png");
+    background-size: cover;
+    background-position: center;
+    top:17px;
+    left: 8px;
+}
+ul li.checked::before{
+    background-image: url("checked.png");
+}
+ul li.checked{
+    text-decoration: line-through;
+    color: rgb(22, 22, 56);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top:25px;
+    width:40px;
+    font-size: 22px;
+    color:#081249;
+    line-height: 4px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #edeef0;
+}
